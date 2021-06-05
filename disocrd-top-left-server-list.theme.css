@@ -1,0 +1,77 @@
+/**
+    * @name Top Left Server List
+    * @version 1.0.0
+    * @description Moves the server list to the upper left corner.
+    * @author kcpru@3422
+    *
+    * @website https://github.com/kcpru
+    * @source https://github.com/kcpru/discord-top-left-server-list
+**/
+
+:root {
+  --server-list-height: 200px;
+}
+
+.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div:nth-child(3) {
+  width: 240px;
+  height: var(--server-list-height);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  overflow: hidden scroll;
+}
+
+.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div:nth-child(3) .listItem-GuPuDH {
+    margin: 5px 1px;
+}
+
+.base-3dtUhz .sidebar-2K8pFh {
+  position: fixed;
+  top: calc(var(--server-list-height) + 100px);
+  left: 0;
+  width: 240px;
+  height: calc(100% - var(--server-list-height) - 100px);
+}
+
+nav.wrapper-3NnKdC.guilds-1SWlCJ {
+  width: 240px !important;
+}
+
+.guildSeparator-33mFX6 {
+  display: none;
+}
+
+.tutorialContainer-30WoTp {
+  position: absolute;
+  top: 12px;
+  left: 75px;
+}
+
+.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > .listItem-GuPuDH {
+  position: absolute;
+  top: 12px;
+  left: 150px;
+}
+
+.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div:nth-child(3)::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div:nth-child(3)::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div:nth-child(3)::-webkit-scrollbar-thumb,
+.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div:nth-child(3)::-webkit-scrollbar-track {
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 4px;
+}
+
+.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div:nth-child(3)::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-auto-track);
+}
+
+.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div:nth-child(3)::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
